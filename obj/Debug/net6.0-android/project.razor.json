@@ -1,0 +1,15 @@
+{
+  "FilePath": "/Users/SamMBP/CLIProjects/MauiBlazor/MauiBlazor.csproj",
+  "Configuration": {
+    "ConfigurationName": "Default",
+    "LanguageVersion": "6.0",
+    "Extensions": []
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 1000
+  },
+  "RootNamespace": "MauiBlazor",
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}

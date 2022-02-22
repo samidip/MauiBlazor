@@ -1,0 +1,33 @@
+@page "/API"
+@using System.Text.Json
+@using System.Text.Json.Serialization;
+
+
+<h1>Hello Minimal API</h1>
+@((MarkupString)APIMarkup)
+
+@code
+{
+    string APIMarkup;
+
+    protected async override Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        await CallAPI();
+    }
+    
+    async Task CallAPI()
+    {
+        using (var httpClient = new HttpClient())
+        {
+            using (var response = await httpClient.GetAsync("https://localhost:7197/person"))
+            {
+                APIMarkup = await response.Content.ReadAsStringAsync();
+            }
+        }
+    }
+}
+
+
+
+
